@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        
+        <style>
+            
+            body {
+                background-color: gainsboro;
+                font-family: Arial, sans-serif;
+            }
+            
+            header {
+                background-color: white;
+                width: 100%;
+                height: 40px;
+            }
+            
+            header div {
+                float: right;
+                padding: 0 40px;
+                display: inline-block;
+            }
+            
+            header div img {
+                width: 30px;
+                height: 30px;
+                margin-left: 2em;
+                margin-right: 5em;
+                
+            }
+            
+            header ul{
+                
+                margin:0;
+                margin-left: 10%;
+                padding:0;
+                float: left;
+            }
+            
+            header ul li{
+                list-style-type:none;
+                display: inline;
+            }
+            
+            header ul li a{
+                padding: 10px 40px;
+                text-decoration: none;
+                background-color: white;
+                color: cornflowerblue;
+                display: inline-block;
+            }
+            
+            header ul li a:hover{
+                background-color: cornflowerblue;
+                color: white;
+            }
+            
+            main{
+                width: 80%;
+                margin: 0 auto;
+                
+            }
+            
+            
+            #trends {
+                padding: 3%;
+                background-color: white;
+                width: 27%;
+                float: left;
+                margin-top: 10px;
+            }
+            
+            #trends p {
+               color: darkgray;
+            }
+            
+            #trends h5 a {
+               color: cornflowerblue;
+               text-decoration: none;
+            }
+            
+            #trends h5 a:hover {
+               text-decoration: underline;
+            }
+            
+            section{
+                background-color: white;
+                padding: 3%;
+                width: 27%;
+                clear: left;
+                margin-top: 60px;
+            }
+            
+            section h4 a{
+                text-decoration: none;
+                color: black;
+            }
+            
+            section h5 a{
+                text-decoration: none;
+                color: darkgray;
+            }
+            
+            section h4 a:hover{
+                text-decoration: underline
+            }
+            
+            section h5 a:hover{
+                text-decoration: underline
+            }
+            
+            section img{
+                float: left;
+            }
+            
+            section ul{
+                margin:0;
+                padding:0;
+            }
+            
+            section ul li{
+                list-style-type:none;
+                display: inline;
+            }
+            
+            section ul li a{
+                padding: 10px 10px;
+                text-decoration: none;
+                background-color: white;
+                color: darkgray;
+                display: inline-block;
+                margin-right: -2px;
+            }
+            
+            section ul li a:hover{
+                color: cornflowerblue;
+            }
+            
+            
+            article{
+                background-color: white;
+                padding: 5%;
+                width: 55%;
+                float: right;
+            }
+            
+            #tweets h4 a{
+                color: black;
+                text-decoration: none;
+            }
+            
+            #tweets h4 a:hover{
+                color: cornflowerblue;
+                text-decoration: underline;
+            }
+            
+            #tweets h5 a{
+                color: darkgray;
+                text-decoration: none;
+            }
+            
+            footer{
+                padding: 3%;
+                background-color: white;
+                width: 27%;
+                float: left;
+                margin-top: 10px;
+                clear: left;
+            }
+            
+            footer a{
+                text-decoration: none;
+                color: darkgray;
+            }
+            
+            footer a:hover{
+                text-decoration: underline;
+                color: skyblue;
+                
+            }
+            
+        </style> 
+        
+	</head>
+
+    <body>
+        <header>
+                <ul>
+                    <li><a href="" style="background-color: cornflowerblue; color: white">Home</a></li>
+                    <li><a href="">Moments</a></li>
+                    <li><a href="">Notifications</a></li>
+                    <li><a href="">Messages</a></li>
+                </ul>
+                <div>
+                    <img src="imagens/logo.jpg">
+                
+                    <input type="search" name="pesquisa" placeholder="Search Twitter">
+                
+                    <img src="imagens/User-01.jpg">
+                
+                    <input type="submit" value="Tweet" id="tweetar1" name="tweetar1" style="color: white; background-color: cornflowerblue; margin-bottom: px">
+                </div>
+        </header>
+        <main>
+            
+            <article>
+                
+                <div id="novo_tweet">
+                
+                <input type="text" id="tweet" name="tweet" style="width: 85%; margin-right: 2%">
+                <input type="submit" value="Tweet" id="tweetar2" name="tweetar2" style="color: white; background-color: cornflowerblue">
+                
+                </div>
+                
+                <div id="tweets">
+                    <h4><a href="">Usuario1</a></h4>
+                    <h5><a href="">@Usuario1</a></h5>
+                    <p>Texto do primeiro tweet</p>
+                </div>
+                <div id="tweets">
+                    <h4><a href="">Usuario2</a></h4>
+                    <h5><a href="">@Usuario2</a></h5>
+                    <p>Texto do segundo tweet</p>
+                </div>
+                <div id="tweets">
+                    <h4><a href="">Usuario3</a></h4>
+                    <h5><a href="">@Usuario3</a></h5>
+                    <p>Texto do terceiro tweet</p>
+                </div>
+            </article>
+            
+            <section>
+                <img src="imagens/User-01.jpg">
+                <h4><a href="">Usuario</a></h4>
+                <h5><a href="">@Usuario</a></h5>
+                <ul>
+                    <li><a href="">Tweets</a></li>
+                    <li><a href="">Following</a></li>
+                    <li><a href="">Followers</a></li>
+                </ul>
+            </section>
+            
+            <div id="follow">
+            
+            </div>
+            
+            <div id="trends">
+                <h4>Trends for you</h4>
+                <h5><a href="">Trend1</a></h5>
+                <p>Informações Trend1</p>
+                <h5><a href="">Trend2</a></h5>
+                <p>Informações Trend2</p>
+                <h5><a href="">#Hashtag1</a></h5>
+                <p>Informações Hashtag1</p>
+                <h5><a href="">#Hashtag2</a></h5>
+                <p>Informações Hashtag1</p>
+            </div>
+            
+            <footer>
+                <p>&copy; 2018 Twitter <a href="">About</a> <a href="">Help Center</a> <a href="">Terms</a> </p>
+                <p><a href="">Privacy policy</a> <a href="">Cookies</a> <a href="">Ads info</a> <a href="">Brand</a></p>
+                <p> <a href="">Blog</a> <a href="">Status</a> <a href="">Apps</a> <a href="">Jobs</a> <a href="">Marketing</a></p>
+                <p> <a href="">Businesses</a> <a href="">Developers</a></p>
+            </footer>
+        </main>
+		
+    </body>
+</html>
